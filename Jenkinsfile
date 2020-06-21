@@ -57,7 +57,8 @@ pipeline {
                                 mvnHome = tool "M3"
                                 println(mvnHome)
                                 echo "${env.Mvn3}"
-                                sh "${Mvn3}/bin/mvn --version"
+                                //sh "${Mvn3}/bin/mvn --version"
+                                sh "/usr/local/apache-maven-3.6.3/bin/mvn --version"
                             }
                         }
                     }
