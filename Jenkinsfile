@@ -53,7 +53,7 @@ pipeline {
                                 mvnHome = tool "M3"
                                 println(mvnHome)
                                 
-                                sh "${mvnHome}/bin/mvn --version"
+                                sh "source /etc/profile; ${mvnHome}/bin/mvn --version"
                             }
                         }
                     }
