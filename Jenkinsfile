@@ -55,7 +55,7 @@ pipeline {
                                 mvnHome = tool "M3"
                                 println(mvnHome)
                                 //echo "${env.Mvn3}"
-                                sh "${mvnHome}/bin/mvn ${MvnCommand}"
+                                sh "${mvnHome}/bin/mvn --version" // ${MvnCommand}
                             }
                         }
                     }
