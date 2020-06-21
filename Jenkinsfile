@@ -56,8 +56,8 @@ pipeline {
                                 mytools.PrintMes("应用打包",'green')
                                 mvnHome = tool "M3"
                                 println(mvnHome)
-                                echo "${env.Mvn3}"
-                               sh "${Mvn3}/bin/mvn ${MvnCommand}"
+                                //echo "${env.Mvn3}"
+                               sh "mvnHome/bin/mvn ${MvnCommand}"
                             }
                         }
                     }
