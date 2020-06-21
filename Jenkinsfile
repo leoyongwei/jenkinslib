@@ -40,7 +40,7 @@ pipeline {
         }
 
         stage("01"){
-            failFast true
+            //failFast true
             parallel {
         
                 //构建
