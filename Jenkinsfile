@@ -4,13 +4,11 @@
 
 def mytools = new org.devops.tools()
 
-
-
 String workspace = "/opt/jenkins/workspace"
 
-environment {
-   Mvn3 = tool 'M3'
-}
+//environment {
+//   Mvn3 = tool 'M3'
+//}
 
 //Pipeline
 pipeline {
