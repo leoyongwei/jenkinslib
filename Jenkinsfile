@@ -50,7 +50,7 @@ pipeline {
                         timeout(time:20, unit:"MINUTES"){
                             script{
                                 println('应用打包')
-                                mytools.PrintMes("应用打包",'green')
+                                mytools.PrintMes("应用打包",'blue')
                                 mvnHome = tool "M3"
                                 println(mvnHome)
                                 //echo "${env.Mvn3}"
@@ -66,7 +66,7 @@ pipeline {
                         timeout(time:30, unit:"MINUTES"){
                             script{
                                 print("代码扫描")
-                                mytools.PrintMes("代码扫描",'green')
+                                mytools.PrintMes("代码扫描",'red')
                             }
                         }
                     }
